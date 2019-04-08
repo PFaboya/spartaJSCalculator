@@ -6,21 +6,22 @@ if (calculatorType == "b"){
 } else {
   var operation = prompt("Choose which operation to use, power(pow) or square root(sqrt)");
 }
+if (operation != "sqrt"){
+  var secondNumber = prompt("please choose a second number");
+}
 
-var secondNumber = prompt("please choose a second number");
-
-if (operation == "+"){
+if (operation == "+" && calculatorType == "b"){
   alert(Number(firstNumber) + Number(secondNumber));
-} else if (operation == "-"){
+} else if (operation == "-" && calculatorType == "b"){
   alert(Number(firstNumber) - Number(secondNumber));
-} else if (operation == "*"){
+} else if (operation == "*" && calculatorType == "b"){
   alert(Number(firstNumber) * Number(secondNumber));
-} else if (operation == "/") {
+} else if (operation == "/" && calculatorType == "b") {
   alert(Number(firstNumber) / Number(secondNumber));
 }
 
-if (operation == "pow"){
+if (operation == "pow" && calculatorType == "a"){
   alert(Number(firstNumber) ** Number(secondNumber));
-} else if (operation == "sqrt"){
+} else if (operation == "sqrt" && calculatorType == "a"){
   alert(Math.sqrt(Number(firstNumber)));
 }
