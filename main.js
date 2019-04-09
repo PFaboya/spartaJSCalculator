@@ -11,7 +11,7 @@ if (calculatorType == "b"){
   var measurementSystem = prompt("choose metric(m) or imperial(i) system")
 }
 
-if (operation == "a" || operation == "b"){
+if (calculatorType == "b" || operation == "pow"){
   var secondNumber = prompt("please choose a second number");
 }
 
